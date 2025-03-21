@@ -31,8 +31,12 @@ for ii = 1:length(filenames)
 	% Extract information about the file
 	filename = filenames{ii};
    filename_split = split(filename,'.');
-	yr_str = filename_split{2};
-	yr_date = datetime([yr_str '-01-01']);
+	if strcmp('smb_rec',filename_split{1})
+   	yr_str = filename_split{2};
+	   yr_date = datetime([yr_str '-01-01']);
+	else
+		continue
+	end
 
 	% If the file is not within the requested time range, skip it
 	if (str2num(yr_str) < floor(t_start)) | (str2num(yr_str) > t_end)
