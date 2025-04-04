@@ -12,7 +12,7 @@ function [output] = interpRACMO23p2smb(X,Y,t_start,t_end),
 %                it is a P1 timeseries
 %
 %   Examples:
-%      smb = interpRACMO21p2smb(md.mesh.x,md.mesh.y,2007.0,2022.5);
+%      smb = interpRACMO23p2smb(md.mesh.x,md.mesh.y,2007.0,2022.5);
 %
 % Version 08/18/2023 Jessica Badgeley jessica.a.badgeley@dartmouth.edu
 
